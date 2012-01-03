@@ -27,6 +27,6 @@ A FPS shooter that you play online with other users. No AI. Matches are timed De
 		Arms
 		Legs
 	-Buildings (Destructible)
-		1 and 2 story
+		One and two story
 	-Scores
 		Kills, deaths, damage done to people, damage received.
