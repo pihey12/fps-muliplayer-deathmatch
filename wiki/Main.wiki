@@ -1,5 +1,3 @@
-#summary One-sentence summary of this page.
-
 = Summary of this project =
 
 A FPS shooter that you play online with other users. No AI. Matches are timed Deathmatch/Team Deathmatch. Users go around killing each other and destroying buildings. If someone is in the building, damage will be done to them. Graphics will be simple/low poly count.
