@@ -1,0 +1,4 @@
+#summary Places that could be useful
+
+Unity Forum - http://forum.unity3d.com/
+ - My user name is prophet there. Lots of good developers on there and lots of code samples hidden around.
