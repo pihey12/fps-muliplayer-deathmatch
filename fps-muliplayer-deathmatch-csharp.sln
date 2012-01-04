@@ -1,0 +1,21 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+
+Project("{F3A484EE-E258-07CD-BB29-5625D8D13C58}") = "fps-muliplayer-deathmatch", "Assembly-CSharp-firstpass-vs.csproj", "{C7BE48D2-F570-7D46-9938-13700D1AE376}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7BE48D2-F570-7D46-9938-13700D1AE376}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7BE48D2-F570-7D46-9938-13700D1AE376}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7BE48D2-F570-7D46-9938-13700D1AE376}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7BE48D2-F570-7D46-9938-13700D1AE376}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	
+EndGlobal
