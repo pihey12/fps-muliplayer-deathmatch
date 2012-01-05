@@ -1,18 +1,18 @@
 #summary Places that could be useful
 
 Unity Forum - http://forum.unity3d.com/
- - My user name is prophet there. Lots of good developers on there and lots of code samples hidden around.
+ * My user name is prophet there. Lots of good developers on there and lots of code samples hidden around.
 
 *Game Related Tutorials*
 
 Menu Creation
- - http://www.moddb.com/groups/unity-devs/tutorials/unity-how-to-create-main-menu  (Using this for main menu creation)
+ * http://www.moddb.com/groups/unity-devs/tutorials/unity-how-to-create-main-menu  (Using this for main menu creation)
 
 #General Tutorials#
 
- - http://www.youtube.com/watch?v=KSwB0N9Axp4 (C# in Unity)
- - http://www.unityscript.com/lessons1/basics.php (Unity Scripting Basics)
- - http://www.burgzergarcade.com/ (Misc tutorials)
- - http://unity3d.com/support/resources/tutorials/fpstutorial.html (FPS tutorial made by Unity)
- - http://unity3d.com/support/resources/tutorials/3d-platform-game (3rd person tutorial made by Unity)
- - http://www.reddit.com/r/unity_tutorials/ (Random Unity tutorials)
+ * http://www.youtube.com/watch?v=KSwB0N9Axp4 (C# in Unity)
+ * http://www.unityscript.com/lessons1/basics.php (Unity Scripting Basics)
+ * http://www.burgzergarcade.com/ (Misc tutorials)
+ * http://unity3d.com/support/resources/tutorials/fpstutorial.html (FPS tutorial made by Unity)
+ * http://unity3d.com/support/resources/tutorials/3d-platform-game (3rd person tutorial made by Unity)
+ * http://www.reddit.com/r/unity_tutorials/ (Random Unity tutorials)
