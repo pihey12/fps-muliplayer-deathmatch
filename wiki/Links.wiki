@@ -5,7 +5,6 @@ Unity Forum - http://forum.unity3d.com/
 
 *Game Related Tutorials*
 
-Menu Creation
  * http://www.moddb.com/groups/unity-devs/tutorials/unity-how-to-create-main-menu  (Using this for main menu creation)
 
 *General Tutorials*
