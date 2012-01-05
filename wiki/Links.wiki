@@ -8,7 +8,7 @@ Unity Forum - http://forum.unity3d.com/
 Menu Creation
  * http://www.moddb.com/groups/unity-devs/tutorials/unity-how-to-create-main-menu  (Using this for main menu creation)
 
-#General Tutorials#
+*General Tutorials*
 
  * http://www.youtube.com/watch?v=KSwB0N9Axp4 (C# in Unity)
  * http://www.unityscript.com/lessons1/basics.php (Unity Scripting Basics)
