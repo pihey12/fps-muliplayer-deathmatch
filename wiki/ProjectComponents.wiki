@@ -1,4 +1,4 @@
-#Summary Break down of the phases and components of the project.
+#summary Break down of the phases and components of the project.
 
 = Phase 1 =
 
