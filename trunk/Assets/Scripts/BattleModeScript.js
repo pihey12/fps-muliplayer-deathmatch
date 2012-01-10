@@ -14,11 +14,25 @@ function theFirstMenu() {
     
     ///////main menu buttons
     //game start button
+    if(GUI.Button(Rect(5, 150, 300, 40), "Create Battle")) {
+    script = GetComponent("BattleModeScript"); 
+    script.enabled = false;
+    var script3 = GetComponent("CreateRoomScript"); 
+    script3.enabled = true;
+    }    
+    
+    if(GUI.Button(Rect(5, 200, 300, 40), "Join Battle")) {
+    script = GetComponent("BattleModeScript"); 
+    script.enabled = false;
+    var script5 = GetComponent("JoinRoomScript"); 
+    script5.enabled = true;
+    }
+    
     if(GUI.Button(Rect(5, Screen.height-50, 300, 40), "Back")) {
     script = GetComponent("MainMenuScript"); 
     script.enabled = true;
-    var script2 = GetComponent("SettingsMenuScript"); 
-    script2.enabled = false;
+    var script9 = GetComponent("BattleModeScript"); 
+    script9.enabled = false;
     }    
     
     //layout end

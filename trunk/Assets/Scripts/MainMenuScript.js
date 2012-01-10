@@ -4,7 +4,7 @@ var logoTexture : Texture2D;
 function theFirstMenu() {
 	var script;
     //layout start
-    GUI.BeginGroup(Rect(20, Screen.height/2 - 150, 350, Screen.height));
+    GUI.BeginGroup(Rect(20, Screen.height/2 - 150, Screen.width, Screen.height));
     
     //the menu background box
     GUI.Box(Rect(0, 0, 300, 200), "");
@@ -14,29 +14,29 @@ function theFirstMenu() {
     
     ///////main menu buttons
     //game start button
-    if(GUI.Button(Rect(20, 100, 300, 40), "Create Character")) {
-    script = GetComponent("CreateCharacterScript"); 
-    script.enabled = false;
-    //var script2 = GetComponent("MapMenuScript"); 
-    //script2.enabled = true;
-    }
-    
-    if(GUI.Button(Rect(20, 150, 300, 40), "Battles")) {
+    if(GUI.Button(Rect(5, 100, 300, 40), "Create Character")) {
     script = GetComponent("MainMenuScript"); 
     script.enabled = false;
-    //var script2 = GetComponent("MapMenuScript"); 
-    //script2.enabled = true;
+    var script2 = GetComponent("CreateCharacterScript"); 
+    script2.enabled = true;
     }
     
-    if(GUI.Button(Rect(20, 200, 300, 40), "Settings")) {
-    script = GetComponent("SettingsMenuScript"); 
+    if(GUI.Button(Rect(5, 150, 300, 40), "Battles")) {
+    script = GetComponent("MainMenuScript"); 
     script.enabled = false;
-    //var script2 = GetComponent("MapMenuScript"); 
-    //script2.enabled = true;
+    var script3 = GetComponent("BattleModeScript"); 
+    script3.enabled = true;
+    }    
+    
+    if(GUI.Button(Rect(5, 200, 300, 40), "Settings")) {
+    script = GetComponent("MainMenuScript"); 
+    script.enabled = false;
+    var script5 = GetComponent("SettingsMenuScript"); 
+    script5.enabled = true;
     }
     
     //quit button
-    if(GUI.Button(Rect(20, 250, 300, 40), "Quit")) {
+    if(GUI.Button(Rect(5, 250, 300, 40), "Quit")) {
     Application.Quit();
     }
     
