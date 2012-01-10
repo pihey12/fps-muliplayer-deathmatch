@@ -1,15 +1,18 @@
-#Break down of the phases and components of the project.
+#Summary Break down of the phases and components of the project.
 
 = Phase 1 =
 
 *Menu*
 
 Joining a Room
- - Unassigned
+ - Dale
+ You will also need  to add some form of login screen or have the ability to select LAN or internet games. Think I have that documented. What matters is if the user picks internet, we need to have them login.
+
 Creating Room
  - Stephen
+
 Settings (tabs for video, sound, and whatever else is probably needed)
- - Unassigned
+ - Eric
 
 = Phase 2 =
 
