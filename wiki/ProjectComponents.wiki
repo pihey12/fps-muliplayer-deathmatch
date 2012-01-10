@@ -3,6 +3,7 @@
 = Phase 1 =
 
 *Menu*
+
 Joining a Room
  - Unassigned
 Creating Room
