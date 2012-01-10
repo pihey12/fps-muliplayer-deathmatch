@@ -1,0 +1,15 @@
+#Break down of the phases and components of the project.
+
+= Phase 1 =
+
+Menu:
+Joining a Room
+ - Unassigned
+Creating Room
+ - Stephen
+Settings (tabs for video, sound, and whatever else is probably needed)
+ - Unassigned
+
+= Phase 2 =
+
+_TBD_
