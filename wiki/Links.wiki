@@ -19,10 +19,10 @@ Unity Forum - http://forum.unity3d.com/
  * http://vimeo.com/7821881 (Hieght map creation)
  * http://unity3d.com/support/documentation/video/ (More basic videos covering basic use and navigation)
  * http://unity3d.com/support/documentation/Manual/Tutorials.html
- * 
 
 *Networking Tutorials*
 Not sure which one will be used. Probably the built in, but who knows.
  * http://www.exitgames.com/ (Photon)
  * http://www.smartfoxserver.com/products/pro.php (Smartfox)
  * http://unity3d.com/support/resources/example-projects/networking-example.html (Builtin networking in Unity)
+ * http://www.youtube.com/watch?v=1YS8BDjFvIs
