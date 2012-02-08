@@ -15,3 +15,6 @@ Unity Forum - http://forum.unity3d.com/
  * http://unity3d.com/support/resources/tutorials/fpstutorial.html (FPS tutorial made by Unity)
  * http://unity3d.com/support/resources/tutorials/3d-platform-game (3rd person tutorial made by Unity)
  * http://www.reddit.com/r/unity_tutorials/ (Random Unity tutorials)
+ * http://www.youtube.com/watch?v=gGDTZE_RYjs (Intro video)
+ * http://vimeo.com/7821881 (Hieght map creation)
+ * http://unity3d.com/support/documentation/video/ (More basic videos covering basic use and navigation)
