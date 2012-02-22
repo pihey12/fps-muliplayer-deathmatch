@@ -11,7 +11,7 @@ Unity Forum - http://forum.unity3d.com/
 
  * http://www.youtube.com/watch?v=KSwB0N9Axp4 (C# in Unity)
  * http://www.unityscript.com/lessons1/basics.php (Unity Scripting Basics)
- * http://www.burgzergarcade.com/ (Misc tutorials)
+ * http://www.burgzergarcade.com/ (Misc tutorials for hack and slash)
  * http://unity3d.com/support/resources/tutorials/fpstutorial.html (FPS tutorial made by Unity)
  * http://unity3d.com/support/resources/tutorials/3d-platform-game (3rd person tutorial made by Unity)
  * http://www.reddit.com/r/unity_tutorials/ (Random Unity tutorials)
