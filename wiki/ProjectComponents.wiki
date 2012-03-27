@@ -14,6 +14,9 @@ Creating Room
 Settings (tabs for video, sound, and whatever else is probably needed)
  - Eric
 
+Character Creation - This will be simple but should allow everyone to get a look of the graphics I am considering.
+ - Chris
+
 = Phase 2 =
 
 _TBD_
