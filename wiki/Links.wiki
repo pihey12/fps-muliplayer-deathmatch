@@ -19,6 +19,7 @@ Unity Forum - http://forum.unity3d.com/
  * http://vimeo.com/7821881 (Hieght map creation)
  * http://unity3d.com/support/documentation/video/ (More basic videos covering basic use and navigation)
  * http://unity3d.com/support/documentation/Manual/Tutorials.html
+ * http://unity3d.com/support/documentation/Manual/Game%20Interface%20Elements.html (GUI related content for your menu creation)
 
 *Networking Tutorials*
 Not sure which one will be used. Probably the built in, but who knows.
