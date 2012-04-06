@@ -21,7 +21,7 @@ A FPS shooter that you play online with other users. No AI. Matches are timed De
 	Individuals host the game and show them on the server/lobby.
 
 = Components: =
-	-Weapons
+	-Weapons (weapons will be the forearm of the character)
 		Melee
 		Guns
 		Explosives
