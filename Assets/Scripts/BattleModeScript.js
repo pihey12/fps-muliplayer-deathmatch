@@ -2,6 +2,7 @@ var newSkin : GUISkin;
 var logoTexture : Texture2D;
 
 function theFirstMenu() {
+	GUI.skin = newSkin;
 	var script;
     //layout start
     GUI.BeginGroup(Rect(20, 0, 350, Screen.height));

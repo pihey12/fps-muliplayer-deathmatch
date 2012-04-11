@@ -3,14 +3,17 @@ var logoTexture : Texture2D;
 
 function theFirstMenu() {
 	var script;
+	GUI.Label(Rect(5,5,300,50),"Attempted Intelligence Encounter","label");
     //layout start
-    GUI.BeginGroup(Rect(20, Screen.height/2 - 150, Screen.width, Screen.height));
+    //GUI.BeginGroup(Rect(20, 20, Screen.width, Screen.height));
+    //Title
+	//GUI.Label(Rect(5,5,300,50),"Attempted Intelligence Encounter");
     
     //the menu background box
-    GUI.Box(Rect(0, 0, 300, 200), "");
+    //GUI.Box(Rect(0, 0, 300, 200), "");
     
     //logo picture
-    GUI.Label(Rect(15, 10, 300, 68), logoTexture);
+    //GUI.Label(Rect(15, 10, 300, 68), logoTexture);
     
     ///////main menu buttons
     //game start button
@@ -41,12 +44,13 @@ function theFirstMenu() {
     }
     
     //layout end
-    GUI.EndGroup(); 
+    //GUI.EndGroup(); 
 }
 
 function OnGUI () {
     //load GUI skin
-    GUI.skin = newSkin;
+    //GUI.skin = newSkin;
+    
     
     //execute theFirstMenu function
     theFirstMenu();
