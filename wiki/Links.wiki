@@ -30,3 +30,4 @@ Not sure which one will be used. Probably the built in, but who knows.
 
 *Blender Tutorials*
  * http://www.youtube.com/watch?v=PMIJg1JY-sw&feature=iv&src_vid=P-oga9GL_74&annotation_id=annotation_354517 (Blender tutorial to make a house)
+ *http://en.wikibooks.org/wiki/Blender_3D:_Noob_to_Pro/Bones (Tutorial on Armature/Bones)
