@@ -1,35 +1,40 @@
 var newSkin : GUISkin;
 var logoTexture : Texture2D;
 
-function theFirstMenu() {
-	GUI.skin = newSkin;
+function theSettingsMenu() {
 	var script;
-    //layout start
-    GUI.BeginGroup(Rect(20, 0, 350, Screen.height));
+	GUI.Label(Rect(5,5,200,50),"Modify Game Settings","label");
     
-    //the menu background box
-    GUI.Box(Rect(0, 0, 300, 200), "");
+    ///////menu buttons  
+    //video button    
+    if(GUI.Button(Rect(5, 100, 200, 40), "Video")) 
+    {
+	    script = GetComponent("SettingsMenuScript"); 
+	    script.enabled = false;
+	    var scriptVideo = GetComponent("VideoModeScript"); 
+	    scriptVideo.enabled = true;
+    }
     
-    //logo picture
-    GUI.Label(Rect(15, 10, 300, 68), logoTexture);
+    //audio button
+    if(GUI.Button(Rect(5, 150, 200, 40), "Audio")) 
+    {
+	    script = GetComponent("SettingsMenuScript"); 
+	    script.enabled = false;
+	    var scriptAudio = GetComponent("AudioMenuScript"); 
+	    scriptAudio.enabled = true;
+    }
     
-    ///////main menu buttons
-    //game start button
-    if(GUI.Button(Rect(5, Screen.height-50, 300, 40), "Back")) {
-    script = GetComponent("MainMenuScript"); 
-    script.enabled = true;
-    var script2 = GetComponent("SettingsMenuScript"); 
-    script2.enabled = false;
-    }    
-    
-    //layout end
-    GUI.EndGroup(); 
+    //back button
+    if(GUI.Button(Rect(5, Screen.height-50, 200, 40), "Back")) 
+    {
+	    script = GetComponent("SettingsMenuScript"); 
+	    script.enabled = false;
+	    var scriptBack = GetComponent("MainMenuScript"); 
+	    scriptBack.enabled = true;
+    }   
 }
 
-function OnGUI () {
-    //load GUI skin
-    GUI.skin = newSkin;
-    
-    //execute theFirstMenu function
-    theFirstMenu();
+function OnGUI () {    
+    //execute theSettingsMenu function
+    theSettingsMenu();
 }
