@@ -1,12 +1,9 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\SettingsMenuScript.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\MainMenuScript.js">
     <Files>
-      <File FileName="Assets\Scripts\SettingsMenuScript.js" Line="1" Column="17" />
-      <File FileName="Assets\Scripts\AudioMenuScript.js" Line="3" Column="1" />
-      <File FileName="Assets\Scripts\MainMenuScript.js" Line="5" Column="13" />
-      <File FileName="Assets\Scripts\VideoMenuScript.js" Line="3" Column="1" />
-      <File FileName="Assets\Scripts\BattleModeScript.js" Line="39" Column="17" />
+      <File FileName="Assets\Scripts\CreateCharacterScript.js" Line="15" Column="66" />
+      <File FileName="Assets\Scripts\MainMenuScript.js" Line="7" Column="45" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
