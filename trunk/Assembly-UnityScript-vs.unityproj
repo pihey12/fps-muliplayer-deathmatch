@@ -47,7 +47,9 @@
      <Compile Include="Assets\Scripts\BattleModeScript.js" />
      <Compile Include="Assets\Scripts\CreateCharacterScript.js" />
      <Compile Include="Assets\Scripts\CreateRoomScript.js" />
+     <Compile Include="Assets\Scripts\CreateRoomScriptOnline.js" />
      <Compile Include="Assets\Scripts\JoinRoomScript.js" />
+     <Compile Include="Assets\Scripts\JoinRoomScriptOnline.js" />
      <Compile Include="Assets\Scripts\MainMenuScript.js" />
      <Compile Include="Assets\Scripts\SettingsMenuScript.js" />
      <Compile Include="Assets\Standard Assets (Mobile)\Scripts\CameraRelativeControl.js" />
