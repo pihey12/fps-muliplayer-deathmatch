@@ -4,12 +4,16 @@ var logoTexture : Texture2D;
 var gameName : String = "Name";
 var password : String = "";
 
+var buttonSize = 0;
 var battleTypeInt = 0;
 var battleTypeStrings : String[] = ["Deathmatch", "Team Deathmatch"];
 var playerCountInt = 0;
 var playerCountStrings : String[] = ["2","4","6","8","10"];
 var gameTimeInt = 0;
 var gameTimeStrings : String[] = ["5","10","15"];
+var mapSelectionInt = 0;
+var mapSelectionStrings : String[] = ["Place","Your Mom's","Hooker Haven","Urban Playground","Wasteland","Monkey Cage","Another Place","Backseat"];
+var mapSelection : Vector2 = Vector2.zero;
 
 function theFirstMenu() {
 	GUI.skin = newSkin;
@@ -33,6 +37,17 @@ function theFirstMenu() {
     //Length of match
     GUI.Label(Rect(300,50,150,50),"Game Time:");
     gameTimeInt = GUI.Toolbar (Rect (300, 70, 150, 30), gameTimeInt, gameTimeStrings);
+    
+    //Map Preview
+    GUI.Box(Rect(300,200,300,300),"Map Preview");
+    
+    //Map Selection
+    buttonSize = mapSelectionStrings.Length*30;
+    mapSelection = GUI.BeginScrollView (Rect (5,200,275,300),mapSelection, Rect (0,0, 250, buttonSize));
+    //mapSelectionInt = GUI.Toolbar (Rect (0, 0, 250, 700), mapSelectionInt, mapSelectionStrings);
+    mapSelectionInt = GUI.SelectionGrid (Rect (5, 0, 250, buttonSize), mapSelectionInt, mapSelectionStrings, 1);
+
+    GUI.EndScrollView ();
     
     
     //Game name and password fields
