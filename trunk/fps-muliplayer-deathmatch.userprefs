@@ -1,10 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CreateRoomScript.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CreateOnlineRoom.js">
     <Files>
-      <File FileName="Assets\Scripts\CreateRoomScript.js" Line="15" Column="146" />
-      <File FileName="Assets\Scripts\BattleModeScript.js" Line="4" Column="1" />
-      <File FileName="Assets\Scripts\MainMenuScript.js" Line="53" Column="22" />
+      <File FileName="Assets\Scripts\CreateRoomScript.js" Line="4" Column="9" />
+      <File FileName="Assets\Scripts\BattleModeScript.js" Line="51" Column="50" />
+      <File FileName="Assets\Scripts\CreateOnlineRoom.js" Line="72" Column="50" />
+      <File FileName="Assets\Scripts\MainMenuScript.js" Line="11" Column="19" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -7,6 +7,7 @@ var password : String = "Password";
 function theFirstMenu() {
 	GUI.skin = newSkin;
 	var script;
+	var script2;
     //layout start
     //GUI.BeginGroup(Rect(20, 0, 550, Screen.height));
     
@@ -23,16 +24,17 @@ function theFirstMenu() {
     {
     	script = GetComponent("BattleModeScript"); 
     	script.enabled = false;
-    	var script3LAN = GetComponent("CreateRoomScript"); 
-    	script3LAN.enabled = true;
+    	script2 = GetComponent("CreateRoomScript"); 
+    	script2.enabled = true;
     }    
     if(GUI.Button(Rect(150, 150, 145, 40), "Join Battle")) 
     {
     	script = GetComponent("BattleModeScript");
     	script.enabled = false;
-    	var script5LAN = GetComponent("JoinRoomScript"); 
-    	script5LAN.enabled = true;
+    	script2 = GetComponent("JoinRoomScript"); 
+    	script2.enabled = true;
     }
+    
     //Online button
     GUI.Label(Rect(5,275,150,50),"Online Game Options");
     //------------User name label and text
@@ -41,20 +43,22 @@ function theFirstMenu() {
     //------------Password label and text
     GUI.Label(Rect(5,330,90,50),"Password:");
     password =  GUI.PasswordField (Rect (90, 330, 200, 20), password, 25);
+    
     if(GUI.Button(Rect(5, 360, 145, 40), "Create Battle")) 
     {
-    	script = GetComponent("BattleModeScript"); 
+    	script = GetComponent("BattleModeScript");
     	script.enabled = false;
-    	var script3ONLINE = GetComponent("CreateRoomScriptOnline"); 
-    	script3LAN.enabled = true;
+    	script2 = GetComponent("CreateOnlineRoom"); 
+    	script2.enabled = true;
     }    
     if(GUI.Button(Rect(150, 360, 145, 40), "Join Battle")) 
     {
     	script = GetComponent("BattleModeScript");
     	script.enabled = false;
-    	var script5ONLINE = GetComponent("JoinRoomScriptOnline"); 
-    	script5LAN.enabled = true;
+    	script2 = GetComponent("JoinRoomScriptOnline");
+    	script2.enabled = true;
     }
+    
     
     //game start button
     //if(GUI.Button(Rect(5, 150, 300, 40), "Create Battle")) {
