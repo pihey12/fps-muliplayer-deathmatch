@@ -2,8 +2,7 @@ var newSkin : GUISkin;
 var logoTexture : Texture2D;
 var baseCharacter : GameObject;
 baseCharacter = GameObject.Find("baseCharacter");
-//baseCharacter.transform.Translate(5,0,0);
-//baseCharacter.transform.Translate(0,0,0);
+
 baseCharacter.transform.position = Vector3(5,-231.67,-434.08);
 
 function theFirstMenu() {

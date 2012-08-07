@@ -18,6 +18,7 @@ var mapSelection : Vector2 = Vector2.zero;
 function theFirstMenu() {
 	GUI.skin = newSkin;
 	var script;
+	var script2;
     //layout start
     //GUI.BeginGroup(Rect(20, 0, 350, Screen.height));
     //the menu background box
@@ -62,14 +63,17 @@ function theFirstMenu() {
     //game start button
     if(GUI.Button(Rect(Screen.width-320, Screen.height-90, 300, 40), "Create Game"))
     {
-    	//Start the network lobby
+    	script = GetComponent("LobbyOnlineScript"); 
+    	script.enabled = true;
+    	script2 = GetComponent("CreateOnlineRoom"); 
+    	script2.enabled = false;
     }
     //Back to main network menu
     if(GUI.Button(Rect(Screen.width-320, Screen.height-50, 300, 40), "Back"))
     {
     	script = GetComponent("BattleModeScript"); 
     	script.enabled = true;
-    	var script2 = GetComponent("CreateRoomScriptOnline"); 
+    	script2 = GetComponent("CreateOnlineRoom"); 
     	script2.enabled = false;
     }
     

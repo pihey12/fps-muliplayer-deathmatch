@@ -1,6 +1,6 @@
 var newSkin : GUISkin;
 var logoTexture : Texture2D;
-var windowRect : Rect = Rect (5, 450, 200, 200);
+//var windowRect : Rect = Rect (5, 450, 200, 200);
 var userName : String = "User Name";
 var password : String = "Password";
 

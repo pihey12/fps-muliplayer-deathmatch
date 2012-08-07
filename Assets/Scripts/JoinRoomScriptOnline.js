@@ -18,7 +18,7 @@ function theFirstMenu() {
     if(GUI.Button(Rect(5, Screen.height-50, 300, 40), "Back")) {
     script = GetComponent("MainMenuScript"); 
     script.enabled = true;
-    var script2 = GetComponent("JoinRoomScript"); 
+    var script2 = GetComponent("JoinRoomScriptOnline"); 
     script2.enabled = false;
     }    
     

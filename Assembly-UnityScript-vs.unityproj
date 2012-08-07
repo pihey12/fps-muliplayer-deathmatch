@@ -18,7 +18,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_3_5_3;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_STANDALONE_WIN;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_WEBCAM;ENABLE_MICROPHONE;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW;ENABLE_SUBSTANCE</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_3_5_4;UNITY_3_5;UNITY_EDITOR;ENABLE_PROFILER;UNITY_STANDALONE_WIN;ENABLE_GENERICS;ENABLE_DUCK_TYPING;ENABLE_TERRAIN;ENABLE_MOVIES;ENABLE_WEBCAM;ENABLE_MICROPHONE;ENABLE_NETWORK;ENABLE_CLOTH;ENABLE_WWW;ENABLE_SUBSTANCE</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -48,10 +48,10 @@
      <Compile Include="Assets\Scripts\CreateCharacterScript.js" />
      <Compile Include="Assets\Scripts\CreateOnlineRoom.js" />
      <Compile Include="Assets\Scripts\CreateRoomScript.js" />
-     <Compile Include="Assets\Scripts\CreateRoomScriptO.js" />
-     <Compile Include="Assets\Scripts\CreateRoomScriptOnline.js" />
      <Compile Include="Assets\Scripts\JoinRoomScript.js" />
      <Compile Include="Assets\Scripts\JoinRoomScriptOnline.js" />
+     <Compile Include="Assets\Scripts\LobbyScript.js" />
+     <Compile Include="Assets\Scripts\LobbyScriptOnline.js" />
      <Compile Include="Assets\Scripts\MainMenuScript.js" />
      <Compile Include="Assets\Scripts\SettingsMenuScript.js" />
      <Compile Include="Assets\Standard Assets (Mobile)\Scripts\CameraRelativeControl.js" />
