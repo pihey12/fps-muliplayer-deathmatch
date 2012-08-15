@@ -7,9 +7,11 @@ Unity Forum - http://forum.unity3d.com/
 
  * http://www.moddb.com/groups/unity-devs/tutorials/unity-how-to-create-main-menu  (Using this for main menu creation)
  * http://www.burgzergarcade.com/tutorials/game-engines/unity3d/066-unity3d-tutorial-character-customization-3d-model-setup  Character customization
+ * http://unity3d.com/support/resources/example-projects/networking-example Networking resource example
 
 *General Tutorials*
 
+ * http://unity3d.com/support/resources/example-projects/
  * http://www.youtube.com/watch?v=KSwB0N9Axp4 (C# in Unity)
  * http://www.unityscript.com/lessons1/basics.php (Unity Scripting Basics)
  * http://www.burgzergarcade.com/ (Misc tutorials for hack and slash)
