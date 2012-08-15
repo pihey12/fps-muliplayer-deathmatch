@@ -4,17 +4,13 @@
 
 *Menu*
 
-Joining a Room
- - Dale
- You will also need  to add some form of login screen or have the ability to select LAN or internet games. Think I have that documented. What matters is if the user picks internet, we need to have them login.
-
-Creating Room
- - Chris as of 7-8-2012
-
 Settings (tabs for video, sound, and whatever else is probably needed)
  - Eric
 
 Character Creation - This will be simple but should allow everyone to get a look of the graphics I am considering.
+ - Chris
+
+Create skeleton screens for all menu's (DONE)
  - Chris
 
 = Phase 2 =
