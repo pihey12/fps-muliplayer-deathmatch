@@ -1,13 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\LobbyScriptOnline.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\CreateCharacterScript.js">
     <Files>
-      <File FileName="Assets\Scripts\CreateOnlineRoom.js" Line="15" Column="176" />
-      <File FileName="Assets\Scripts\MainMenuScript.js" Line="1" Column="1" />
-      <File FileName="Assets\Scripts\JoinRoomScriptOnline.js" Line="21" Column="53" />
       <File FileName="Assets\Scripts\BattleModeScript.js" Line="22" Column="54" />
       <File FileName="Assets\Scripts\LobbyScript.js" Line="36" Column="54" />
       <File FileName="Assets\Scripts\LobbyScriptOnline.js" Line="48" Column="51" />
+      <File FileName="Assets\Scripts\CreateCharacterScript.js" Line="21" Column="30" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

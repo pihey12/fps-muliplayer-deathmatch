@@ -13,24 +13,56 @@ var llLegSelection : int = 1;
 var baseCharacter : GameObject;
 baseCharacter = GameObject.Find("baseCharacter");
 baseCharacter.transform.position = Vector3(0.09,-231.67,-434.08);
-//baseCharacter.transform.Translate(0,0,0);
 
-//baseCharacter =  GameObject ("baseCharacter");
-//baseCharacter.transform.Translate(0,-231,-431);
-//baseCharacter.transform.localScale += Vector3(100,100,100);
-//Instantiate(baseCharacter);
+//Arrays for body parts
+var head : String[] = ["head1","head2","head3","head4","head5","head6","head7",
+	"head8","head9"];
+var headObject : ArrayList;
+headObject = new ArrayList();
+var torso : String[] = ["torso1","torso2","torso3","torso4","torso5","torso6","torso7",
+	"torso8","torso9"];
+var ruArm : String[] = ["ruArm1","ruArm2","ruArm3","ruArm4","ruArm5","ruArm6","ruArm7",
+	"ruArm8","ruArm9"];
+var rlArm : String[] = ["rlArm1","rlArm2","rlArm3","rlArm4","rlArm5","rlArm6","rlArm7",
+	"rlArm8","rlArm9"];
+var luArm : String[] = ["luArm1","luArm2","luArm3","luArm4","luArm5","luArm6","luArm7",
+	"luArm8","luArm9"];
+var llArm : String[] = ["llArm1","llArm2","llArm3","llArm4","llArm5","llArm6","llArm7",
+	"llArm8","llArm9"];
+var ruLeg : String[] = ["ruLeg1","ruLeg2","ruLeg3","ruLeg4","ruLeg5","ruLeg6","ruLeg7",
+	"ruLeg8","ruLeg9"];
+var rlLeg : String[] = ["rlLeg1","rlLeg2","rlLeg3","rlLeg4","rlLeg5","rlLeg6","rlLeg7",
+	"rlLeg8","rlLeg9"];
+var luLeg : String[] = ["luLeg1","luLeg2","luLeg3","luLeg4","luLeg5","luLeg6","luLeg7",
+	"luLeg8","luLeg9"];
+var llLeg : String[] = ["llLeg1","llLeg2","llLeg3","llLeg4","llLeg5","llLeg6","llLeg7",
+	"llLeg8","llLeg9"];
 
-//baseCharacter.active = true;
+//Find main gameobjects
+var head1 : GameObject;
+var tempHead : GameObject;
+head1 = GameObject.Find("HeadObject");
+tempHead = head1.Find("head1");
+//tempHead.SetActiveRecursively(false);
+
+//tempHead = head1.Find("head2");
+//tempHead.active = false;
+//tempHead = Resources.Load("bodyParts/headPrefab1");
+
+//sets all objects to inactive
+var count : int = 0;
+while(count <= 1)
+{
+   	headObject.Add(head1.Find(head[count]));
+   	headObject[count].SetActiveRecursively(false);
+   	tempHead = headObject[count];
+   	count++;
+}
 
 function createCharacter() {
 	GUI.skin = newSkin;
 	var script;
-	//gameObject.GetComponent("baseCharacter").active = false;
-	//Load base character for editting
-	
-	//Vector3 location = Vector3(0,-231,-431);
-	//GameObject.Instantiate(baseCharacter):GameObject;
-			
+
 	//Title
 	GUI.Label(Rect(5,5,300,50),"Character Creation");
 	
@@ -39,6 +71,9 @@ function createCharacter() {
     //Head selection
     GUI.Label(Rect(40,0, 80, 30),"Head " + headSelection.ToString());
     headSelection = GUI.HorizontalScrollbar (Rect(0,30, 120, 30),headSelection, 1, 1, 10);
+    //headSelection.
+    updateBody(headSelection,headObject);
+        
     //Torso selection
     GUI.Label(Rect(170,0, 80, 30),"Torso " + torsoSelection.ToString());
     torsoSelection = GUI.HorizontalScrollbar (Rect(130,30, 120, 30),torsoSelection, 1, 1, 10);
@@ -94,12 +129,34 @@ function createCharacter() {
     }
     
     //
-    if(GUI.Button(Rect(315, Screen.height-50, 300, 40), "Save Character")) {
+    if(GUI.Button(Rect(315, Screen.height-50, 300, 40), "Save Character"))
+    {
     
-    }     
+    }
 }
 
-function OnGUI () {
+function updateBody(num,part)
+{
+	if(!tempHead.Equals(part[num-1]))
+	{
+		tempHead.SetActiveRecursively(false);
+		tempHead.renderer.enabled = false;
+		tempHead = part[num-1];
+		tempHead.renderer.enabled = true;
+		tempHead.SetActiveRecursively(true);		
+	}
+	//head1.renderer.;
+	
+	//headObject[num-1].SetActiveRecursively(true);
+	
+	//part[num].SetActiveRecursively(false);
+	
+	//tempHead = part[num-1];
+	//tempHead.SetActiveRecursively(true);
+}
+
+function OnGUI () 
+{
     
     baseCharacter.transform.position = Vector3(0.09,-231.67,-434.08);
     //load GUI skin
