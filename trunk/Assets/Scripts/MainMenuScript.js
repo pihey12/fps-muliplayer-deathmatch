@@ -2,8 +2,8 @@ var newSkin : GUISkin;
 var logoTexture : Texture2D;
 var baseCharacter : GameObject;
 baseCharacter = GameObject.Find("baseCharacter");
-
-baseCharacter.transform.position = Vector3(5,-231.67,-434.08);
+//camera.transform.position = Vector3(0,0,0);
+baseCharacter.transform.localPosition = Vector3(5,0,0);
 
 function theFirstMenu() {
 	var script;
@@ -21,12 +21,13 @@ function theFirstMenu() {
     
     ///////main menu buttons
     //game start button
-    if(GUI.Button(Rect(5, 100, 300, 40), "Create Character")) {
-    
-    script = GetComponent("MainMenuScript"); 
-    script.enabled = false;
-    var script2 = GetComponent("CreateCharacterScript");
-    script2.enabled = true;
+    if(GUI.Button(Rect(5, 100, 300, 40), "Create Character"))
+    {
+    	baseCharacter.transform.localPosition = Vector3(0,0,0);
+    	script = GetComponent("MainMenuScript"); 
+    	script.enabled = false;
+    	var script2 = GetComponent("CreateCharacterScript");
+    	script2.enabled = true;
     }
     
     if(GUI.Button(Rect(5, 150, 300, 40), "Battles")) {
@@ -55,7 +56,7 @@ function theFirstMenu() {
 function OnGUI () {
     //load GUI skin
     //GUI.skin = newSkin;
-    baseCharacter.transform.position = Vector3(5,-231.67,-434.08);
+    //baseCharacter.transform.position = Vector3(5,-231.67,-434.08);
     //execute theFirstMenu function
     theFirstMenu();
 }

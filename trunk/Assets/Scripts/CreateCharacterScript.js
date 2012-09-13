@@ -1,6 +1,7 @@
 var newSkin : GUISkin;
 var logoTexture : Texture2D;
-var headSelection : int = 1;
+var headSelection : int = 0;
+var prevHeadSelect : int = 1;
 var torsoSelection : int = 1;
 var ruArmSelection : int = 1;
 var rlArmSelection : int = 1;
@@ -12,8 +13,8 @@ var luLegSelection : int = 1;
 var llLegSelection : int = 1;
 var baseCharacter : GameObject;
 baseCharacter = GameObject.Find("baseCharacter");
-baseCharacter.transform.position = Vector3(0.09,-231.67,-434.08);
-
+//baseCharacter.transform.position = Vector3(0.09,-231.67,-434.08);
+//camera.transform.position = Vector3(0,-231.7204,-434.5122);
 //Arrays for body parts
 var head : String[] = ["head1","head2","head3","head4","head5","head6","head7",
 	"head8","head9"];
@@ -39,10 +40,11 @@ var llLeg : String[] = ["llLeg1","llLeg2","llLeg3","llLeg4","llLeg5","llLeg6","l
 	"llLeg8","llLeg9"];
 
 //Find main gameobjects
-var head1 : GameObject;
+var headOne : GameObject;
 var tempHead : GameObject;
-head1 = GameObject.Find("HeadObject");
-tempHead = head1.Find("head1");
+var tempHead2 : GameObject;
+headOne = GameObject.Find("HeadObject");
+tempHead = headOne.Find("head1");
 //tempHead.SetActiveRecursively(false);
 
 //tempHead = head1.Find("head2");
@@ -53,9 +55,12 @@ tempHead = head1.Find("head1");
 var count : int = 0;
 while(count <= 1)
 {
-   	headObject.Add(head1.Find(head[count]));
-   	headObject[count].SetActiveRecursively(false);
+   	headObject.Add(headOne.Find(head[count]));
+   	//headObject[count].SetActiveRecursively(false);   	
+   	//headObject[count].renderer.enabled = false;
    	tempHead = headObject[count];
+   	headObject[count].transform.localPosition = Vector3(0,100,100);
+   	prevHeadSelect = count;
    	count++;
 }
 
@@ -121,11 +126,13 @@ function createCharacter() {
     
     
     //Return to main menu
-    if(GUI.Button(Rect(5, Screen.height-50, 300, 40), "Main Menu")) {
-    script = GetComponent("MainMenuScript"); 
-    script.enabled = true;
-    var script2 = GetComponent("CreateCharacterScript"); 
-    script2.enabled = false;
+    if(GUI.Button(Rect(5, Screen.height-50, 300, 40), "Main Menu")) 
+    {
+    	baseCharacter.transform.localPosition = Vector3(5,0,0);
+    	script = GetComponent("MainMenuScript"); 
+    	script.enabled = true;
+    	var script2 = GetComponent("CreateCharacterScript"); 
+    	script2.enabled = false;
     }
     
     //
@@ -139,28 +146,22 @@ function updateBody(num,part)
 {
 	if(!tempHead.Equals(part[num-1]))
 	{
-		tempHead.SetActiveRecursively(false);
-		tempHead.renderer.enabled = false;
+		part[prevHeadSelect].transform.localPosition = Vector3(0,100,100);
+		//tempHead.SetActiveRecursively(false);
+		//tempHead.renderer.enabled = false;
 		tempHead = part[num-1];
-		tempHead.renderer.enabled = true;
-		tempHead.SetActiveRecursively(true);		
+		part[num-1].transform.localPosition = Vector3(0,0,0);
+		//tempHead.renderer.enabled = true;
+		//tempHead.SetActiveRecursively(true);
+		//part[num-1].SetActiveRecursively(true);
+		prevHeadSelect = num-1;
 	}
-	//head1.renderer.;
-	
-	//headObject[num-1].SetActiveRecursively(true);
-	
-	//part[num].SetActiveRecursively(false);
-	
-	//tempHead = part[num-1];
-	//tempHead.SetActiveRecursively(true);
 }
 
 function OnGUI () 
 {
-    
-    baseCharacter.transform.position = Vector3(0.09,-231.67,-434.08);
     //load GUI skin
-    GUI.skin = newSkin;
+    //GUI.skin = newSkin;
     
     //execute theFirstMenu function
     createCharacter();
