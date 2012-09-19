@@ -22,12 +22,10 @@ var headObject : ArrayList;
 headObject = new ArrayList();
 var torso : String[] = ["torso1","torso2","torso3","torso4","torso5","torso6","torso7",
 	"torso8","torso9"];
-var ruArm : String[] = ["ruArm1","ruArm2","ruArm3","ruArm4","ruArm5","ruArm6","ruArm7",
-	"ruArm8","ruArm9"];
+var ruArm : String[] = ["upperArm1","upperArm2","upperArm3","upperArm4","upperArm5","upperArm6","upperArm7"];
 var rlArm : String[] = ["rlArm1","rlArm2","rlArm3","rlArm4","rlArm5","rlArm6","rlArm7",
 	"rlArm8","rlArm9"];
-var luArm : String[] = ["luArm1","luArm2","luArm3","luArm4","luArm5","luArm6","luArm7",
-	"luArm8","luArm9"];
+var luArm : String[] = ["upperArm1","upperArm2","upperArm3","upperArm4","upperArm5","upperArm6","upperArm7"];
 var llArm : String[] = ["llArm1","llArm2","llArm3","llArm4","llArm5","llArm6","llArm7",
 	"llArm8","llArm9"];
 var ruLeg : String[] = ["ruLeg1","ruLeg2","ruLeg3","ruLeg4","ruLeg5","ruLeg6","ruLeg7",
@@ -53,7 +51,7 @@ tempHead = headOne.Find("head1");
 
 //sets all objects to inactive
 var count : int = 0;
-while(count <= 1)
+while(count <= 8)
 {
    	headObject.Add(headOne.Find(head[count]));
    	//headObject[count].SetActiveRecursively(false);   	
@@ -88,7 +86,7 @@ function createCharacter() {
     GUI.BeginGroup(Rect(20, Screen.height/5.5, 130, 110));
     //Right upper arm
     GUI.Label(Rect(0,0, 120, 30),"Upper Right Arm " + ruArmSelection.ToString());
-    ruArmSelection = GUI.HorizontalScrollbar (Rect(0,30, 120, 30),ruArmSelection, 1, 1, 10);
+    ruArmSelection = GUI.HorizontalScrollbar (Rect(0,30, 120, 30),ruArmSelection, 1, 1, 7);
     //Right lower arm
     GUI.Label(Rect(0,60, 120, 30),"Lower Right Arm " + rlArmSelection.ToString());
     rlArmSelection = GUI.HorizontalScrollbar (Rect(0,90, 120, 30),rlArmSelection, 1, 1, 10);
@@ -98,7 +96,7 @@ function createCharacter() {
     GUI.BeginGroup(Rect(150, Screen.height/5.5, 130, 110));
     //Left upper arm
     GUI.Label(Rect(0,0, 120, 30),"Upper Left Arm " + luArmSelection.ToString());
-    luArmSelection = GUI.HorizontalScrollbar (Rect(0,30, 120, 30),luArmSelection, 1, 1, 10);
+    luArmSelection = GUI.HorizontalScrollbar (Rect(0,30, 120, 30),luArmSelection, 1, 1, 7);
     //Left lower arm
     GUI.Label(Rect(0,60, 120, 30),"Lower Left Arm " + llArmSelection.ToString());
     llArmSelection = GUI.HorizontalScrollbar (Rect(0,90, 120, 30),llArmSelection, 1, 1, 10);
