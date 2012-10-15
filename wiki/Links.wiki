@@ -30,6 +30,7 @@ Not sure which one will be used. Probably the built in, but who knows.
  * http://www.smartfoxserver.com/products/pro.php (Smartfox)
  * http://unity3d.com/support/resources/example-projects/networking-example.html (Builtin networking in Unity)
  * http://www.youtube.com/watch?v=1YS8BDjFvIs
+ * http://docs.unity3d.com/Documentation/Components/net-MasterServer.html Unity network reading material
 
 *Blender Tutorials*
  * http://www.youtube.com/watch?v=PMIJg1JY-sw&feature=iv&src_vid=P-oga9GL_74&annotation_id=annotation_354517 (Blender tutorial to make a house)
