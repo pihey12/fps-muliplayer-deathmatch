@@ -30,11 +30,12 @@ function theFirstMenu() {
     	script2.enabled = true;
     }
     
-    if(GUI.Button(Rect(5, 150, 300, 40), "Battles")) {
-    script = GetComponent("MainMenuScript"); 
-    script.enabled = false;
-    var script3 = GetComponent("BattleModeScript"); 
-    script3.enabled = true;
+    if(GUI.Button(Rect(5, 150, 300, 40), "Battles"))
+    {
+    	script = GetComponent("MainMenuScript"); 
+    	script.enabled = false;
+    	var script3 = GetComponent("BattleModeScript"); 
+    	script3.enabled = true;
     }    
     
     if(GUI.Button(Rect(5, 200, 300, 40), "Settings")) {

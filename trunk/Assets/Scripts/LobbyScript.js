@@ -11,6 +11,9 @@ var playerNames : String[] = ["Boe Peep","Boodissy","Prophet","DancerofWar","Smo
 var scrollPosition : Vector2 = Vector2.zero;
 var scrollPosition2 : Vector2 = Vector2.zero;
 
+//Network code here
+
+
 function theFirstMenu() 
 {
 	//Titles
@@ -65,4 +68,9 @@ function OnGUI () {
     }
     //execute theFirstMenu function
     theFirstMenu();
+}
+
+function connectToServer()
+{
+	
 }

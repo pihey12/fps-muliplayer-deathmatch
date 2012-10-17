@@ -12,8 +12,11 @@ var playerCountStrings : String[] = ["2","4","6","8","10"];
 var gameTimeInt = 0;
 var gameTimeStrings : String[] = ["5","10","15"];
 var mapSelectionInt = 0;
-var mapSelectionStrings : String[] = ["The Place","Roadkill Cafe","Place","Your Mom's","Hooker Haven","Urban Playground","Wasteland","Monkey Cage","Another Place","Backseat"];
+var mapSelectionStrings : String[] = ["Golden Palace","Roadkill Cafe","Place","Your Mom's","Hooker Haven","Urban Playground","Wasteland","Monkey Cage","Another Place","Backseat"];
 var mapSelection : Vector2 = Vector2.zero;
+
+var mapPreview : Texture2D;
+mapPreview = Resources.Load("maps/Golden Palace");
 
 function theFirstMenu() {
 	GUI.skin = newSkin;
@@ -40,7 +43,15 @@ function theFirstMenu() {
     gameTimeInt = GUI.Toolbar (Rect (300, 70, 150, 30), gameTimeInt, gameTimeStrings);
     
     //Map Preview
-    GUI.Box(Rect(300,200,300,300),"Map Preview");
+    if(mapSelectionInt == 0)
+    {
+    	//GUI.Box(Rect(300,200,300,300),mapPreview);
+    	GUI.DrawTexture(Rect(300,200,300,300),mapPreview, ScaleMode.StretchToFill, true, 10.0f);
+    }
+    else
+    {
+    	GUI.Box(Rect(300,200,300,300),"Map Preview");
+    }
     
     //Map Selection
     buttonSize = mapSelectionStrings.Length*30;
@@ -61,7 +72,7 @@ function theFirstMenu() {
     GUI.EndGroup();
     
     //game start button
-    if(GUI.Button(Rect(Screen.width-320, Screen.height-90, 300, 40), "Create Game"))
+    if(GUI.Button(Rect(Screen.width-320, Screen.height-90, 300, 40), "Create Room"))
     {
     	script = GetComponent("LobbyScript"); 
     	script.enabled = true;
